@@ -1,0 +1,19 @@
+iframe {
+    border: none;
+    position: absolute;
+    align-self: center;
+    zoom : 230%;
+    
+}
+body {
+    overflow: hidden;
+    background-color: rgb(21, 34, 56);
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding-top: 5vh;
+    justify-content: space-around;
+    flex-direction: column;
+}
