@@ -63,7 +63,7 @@
     flex-direction: column !important;
     justify-content: center !important;
     align-items: center !important;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     animation: fadeIn 2s ease forwards;
     overflow: hidden;
@@ -98,6 +98,12 @@
     user-select: none; /* prevent unwanted selection */
     margin-top: 20px;
   }
+  
+  .start-notice:hover {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.85);
+  }
+  
   @keyframes fadeIn {
     0% {
       opacity: 0;
