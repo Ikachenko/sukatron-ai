@@ -52,6 +52,7 @@ body {
 }
 .logo {
     filter: drop-shadow(0 0 50px rgb(49, 78, 158))
+    align-self: center;
 }
 .start-notice:hover {
     font-size: 2.5rem ;
