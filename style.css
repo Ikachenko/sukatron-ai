@@ -51,7 +51,7 @@
   
   /* Use fixed position for intro to eliminate scroll and zoom issues */
   .intro {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
