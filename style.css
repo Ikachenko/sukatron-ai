@@ -65,7 +65,6 @@
     align-items: center;
     font-size: 2rem;
     text-align: center;
-    padding: 1rem;
     animation: fadeIn 2s ease forwards;
     overflow: hidden;
     touch-action: none; /* disable gestures on intro */
