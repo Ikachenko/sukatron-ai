@@ -73,7 +73,7 @@
   
   /* Adjust intro-items to perfectly center vertically */
   .intro-items {
-    margin: 0 auto;
+    margin: 0 ;
     display: flex;
     flex-direction: column;
     justify-content: center;
