@@ -51,7 +51,7 @@ body {
     transition: ease-in-out 0.5s;
 }
 .logo {
-    filter: drop-shadow(0 0 50px rgb(49, 78, 158))
+    filter: drop-shadow(0 0 50px rgb(49, 78, 158));
     align-self: center;
 }
 .start-notice:hover {
