@@ -2,9 +2,9 @@ iframe {
     border: none;
     position: absolute;
     align-self: center;
-    zoom : 222%;
     z-index: 1;
     opacity: 0;
+    scale: 300%;
 }
 .iframe-visible {
     opacity: 1 !important;
@@ -18,12 +18,13 @@ body {
     align-items: center;
     display: flex;
     justify-content: center;
+    user-select: none;
 }
 .container {
     width: 100vw;
     height: 100vh;
     display: flex;
-    padding-top: 5vh;
+    padding-top: 25vh;
     justify-content: space-around;
     flex-direction: column;
 }
