@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     document.addEventListener("click", function() {
         if (intro.style.display !== "none") {
-            intro.style.display = "none !important";
+            intro.style.display = "none";
             aiContainer.classList.add("iframe-visible");
         }
     });
