@@ -1,145 +1,60 @@
-/* Reset and box sizing */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html, body {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-color: rgb(0, 0, 0) !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
-    touch-action: none; /* disables pan/zoom gestures */
-    overscroll-behavior: contain; /* prevent scroll chaining */
-  }
-  
-  .container {
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0,0,0,1);
-    overflow: hidden;
-  }
-  
-  /* Make iframe bigger, fill more of viewport but keep aspect ratio */
-  iframe {
+iframe {
     border: none;
-    width: 90vw;
-    height: calc(90vw * 1.58); /* approximate aspect ratio height:width of 620:392 = 1.58 */
-    max-height: 100vh;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    position: static;
-    max-width: 100%;
-    display: block;
-    z-index: 1;
-    box-shadow: 0 0 20px rgb(49, 78, 158);
-    border-radius: 10px;
-  }
-  
-  .iframe-visible {
-    opacity: 1 !important;
-  }
-  
-  /* Use fixed position for intro to eliminate scroll and zoom issues */
-  .intro {
     position: absolute;
-    top: 0;
-    left: 0;
+    align-self: center;
+    zoom : 222%;
+    z-index: 1;
+    opacity: 0;
+}
+.iframe-visible {
+    opacity: 1 !important;
+    transition: ease-in-out 1s;
+}
+body {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0,0,0,0.85);
-    color: white;
-    z-index: 10;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: center !important;
-    align-items: center !important;
-    font-size: 1.5rem;
-    text-align: center;
-    animation: fadeIn 2s ease forwards;
     overflow: hidden;
-    touch-action: none; /* disable gestures on intro */
-  }
-  
-  /* Adjust intro-items to perfectly center vertically */
-  .intro-items {
-    margin: 0 ;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background-color: rgb(0, 0, 0);
     align-items: center;
-    height: 100%;
-  }
-  
-  /* Logo styling */
-  .logo {
-    filter: drop-shadow(0 0 50px rgb(49, 78, 158));
-    margin-bottom: 1rem;
-    max-width: 80vw;
-    max-height: 20vh;
-    height: auto;
-  }
-  
-  /* Start notice */
-  .start-notice {
-    color: rgba(255, 255, 255, 0.59);
-    cursor: pointer;
-    transition: font-size 0.5s ease-in-out, color 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    padding-top: 5vh;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.intro {
+    width: 100vw;
+    height:100vh;
+    z-index: 2;
+    position: absolute;
+    background-color: rgba(0, 0, 0);
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 2rem;
-    user-select: none; /* prevent unwanted selection */
-    margin-top: 20px;
-  }
-  
-  .start-notice:hover {
-    font-size: 2.5rem;
-    color: rgba(255, 255, 255, 0.85);
-  }
-  
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Responsive adjustments */
-  @media (max-width: 768px) {
-    .start-notice {
-      font-size: 1.5rem;
-    }
-    .intro {
-      font-size: 1.5rem;
-    }
-    iframe {
-      width: 90vw;
-      height: calc(90vw * 1.58);
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .start-notice {
-      font-size: 1.2rem;
-    }
-    .intro {
-      font-size: 1.2rem;
-    }
-    iframe {
-      width: 95vw;
-      height: calc(95vw * 1.58);
-    }
-  }
-  
-  
+    align-items: center;
+}
+.intro-items {
+    animation : fadeIn 2s;
+}
+.start-notice {
+    color: rgba(255, 255, 255, 0.589);
+    font-size: 2rem;
+    transition: ease-in-out 0.5s;
+}
+.logo {
+    filter: drop-shadow(0 0 50px rgb(49, 78, 158));
+    align-self: center;
+}
+.start-notice:hover {
+    font-size: 2.5rem ;
+    transition: ease-in-out 0.5s; 
+}
